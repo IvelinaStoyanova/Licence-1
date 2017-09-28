@@ -1,0 +1,143 @@
+﻿#Binôme : Stoyanova Ivelina, Ceuninck Guillaume
+
+#Titre : Projet Transformations bijectives d’images
+
+
+
+Semaine du 23 Mars au 30 Mars :
+
+I ) Objectifs : 
+
+
+
+- Etablir le plan regroupant ce qu'il faut faire pour transformer une image comme décrite dans le projet soit les 
+différentes transformations à réaliser
+
+
+- Tester le module PIL
+
+
+- Réaliser la fonction générale de transformation d'images
+
+
+- Commencer à réaliser une fonction de transformation.
+
+
+
+II) Bilan : 
+
+
+
+Nous avons établi un plan global :
+
+- Tester le module PIL
+
+- Réaliser la fonction générale de transformation d'images
+
+- Réaliser chaque fonction de transformation décrite dans le sujet.
+
+- Déterminer le nombres de permutations à réaliser pour chaque fonction de transformation
+
+
+
+Nous avons testé le module PIL (open, mode, size, show, new, putpixel/getpixel)
+
+Nous avons commencé la fonction générale de transformations d'images (modification à faire)
+
+
+
+Semaine du 30 Mars au 6 Avril : 
+
+
+
+I) Objectifs : 
+
+
+
+- Modéliser les fonctions sur Python 
+
+- Programmer la premiere permutation
+
+- Modifier la fonction générale de transformation d'images
+
+- Continuer les autres fonctions de permutations.
+
+
+
+II ) Bilan :
+
+Ce qu'on a fait :
+
+- Nous avons fini certaines transformations (defilement horizontal, vertical, concentrique, photomaton)
+
+- Nous avons modifié la fonction algo afin d'ajouter un input demandant le nombre de transformations à faire.
+
+
+
+Semaine 6 Avril au 13 Avril :
+
+
+I) Objectifs :
+
+- Finir les dernieres transformations
+
+- Commencer les cycles de permutations et si possible la partie Dissimuler un message
+
+- Rajouter des fonctionnalités supplementaires et de la documentation
+
+II ) Billan:
+
+- Nous avons finalisé le travail sur les fonctions de transformations
+
+Nous avons réalisé :
+
+- Une fonction qui calcule les cycles de permutations
+
+- Le début d'une fonction qui effectue l'analyse des cycles d'une permutation
+
+
+Semaines 13 Avril au 26 Avril:
+
+I) Objectifs :
+
+- Finir le travail sur l'analyse d'une fonction
+
+- Réaliser une fonction qui transforme des images en utilisant les fonctions d'analyse des cycles
+
+- Commencer à travailler sur des fonctions supplémentaires
+
+II ) Bilan :
+
+Nous avons réalisé :
+
+- Une fonction qui effectue l'analyse d'une permutation en sauvegardant 
+dans un dictionnaire tous les cycles des pixels de l'image, leur longueur et associant
+à chaque pixel une clé indiquant le cycle auquel il appartient.
+
+- Une fonction transformer_long qui effectue la même chose que transformer mais en utilisant 
+les informations de analyse (préférable pour la réalisation de nombreuses transformations)
+
+- Des fonctions ppcm, ppcm_alternative et ppcm_n, pour calculer l'ordre d'une permutation
+
+Travail supplémentaire : 
+
+- La possibilité de modifier une image en écrivant du texte par dessus
+
+- La possibilité de crypter et décrypter un message sur une image
+
+
+
+Semaine 26 Avril au 3 Mai :
+
+
+I) Objectifs :
+
+- Optimiser et finaliser tous les fonctions déja crée
+
+- Crypter un message complex, ajouter des fonctionalités
+
+- Finir la fonction help 
+
+- Finir les autres fonctions suplementaires
+
+- Tester et optimiser les fonctions, chercher des bugs eventuels

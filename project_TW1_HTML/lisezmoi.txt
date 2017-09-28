@@ -1,0 +1,120 @@
+﻿
+
+	________________________________
+
+	---- MINI PROJET HTML - CSS ----
+	________________________________
+
+	1)Présentation du projet.
+	________________________
+
+!!! Les videos ne marchent pas, parce que j'ai réalisé au dérnier moment, que je ne peux pas ajouté le projet sur moodle
+parce qu'il est trop grand( ou la mise en ligne est trop lente). Je suis vraiment désolé !!!
+
+Mon but dans la création de ces pages était d'atteindre une résponsivité optimale. Le projet était crée à l'aide
+de Mozilla et donc il prend sa meilleur forme là. Mais on peut également l'utiliser avec d'autres navigateurs.
+
+J'ai utilisé quelques propriétés CSS qui n'étaient pas vues en cours:
+
+-webkit-max-content/-moz-max-content:    La largeur intrinsèque préférée.(définition MDN)
+
+Largeur defini en 'vmin':
+
+1/100e de la valeur minimale entre la hauteur et la largeur du viewport.
+
+mix-blend-mode:
+
+La propriété mix-blend-mode décrit la façon dont le contenu d'un élément doit se mélanger avec le contenu de l'élément 
+en dessous et avec son arrière-plan.
+
+Leur usage avait comme but d'améliorer la qualité visuel de la page.
+
+	2)Règles media-queries utilisées et leur effet
+	_______________________________________________
+
+Les règles media-queries sont assez simples. Leur but principal est:
+
+Soit d'adaper les éléments(images, tableaux, videos, titres) si la page dévient trés petite.
+Par exemple: 
+@media screen and (max-width:700px) {
+...}
+@media screen and (max-width:600px) {...}
+
+Soit d'adapter le 'print view' en enlevant les images, les tableaux et les videos.
+@media print {...}
+
+Tous les media-queries se trouvent à la fin de chaque page css.
+
+	3)Transitions CSS
+	_____________________
+
+Il y a quelques transitions, ils peuvent être catégorisés en deux sous-groupes:
+
+A) Les butons, dans le menu de navigation : où les propriétés on pour but d'imiter l'appui d'un bouton.
+
+nav > div:hover {
+  background-color: rgba(200, 200, 200, 0.7);
+  box-shadow: 5px 5px  10px black;
+}
+
+nav > div:hover ul {
+
+  display: block;
+  position: absolute;
+  top: 100%;
+  left: 0px;
+}
+
+B) Les agrandissements:
+
+Leur idée est d'agrandir les images,les lignes de tableaux pour qu'ils soient plus visibles. (L'une d'eux se trouve 
+dans un media querry).
+
+tbody tr:hover {
+  transition: transform 1s;
+  transform: scale(1.15);
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+@media screen and (max-width:600px) {
+
+  figure>img:hover{
+
+    transition: transform 1s;
+
+    transform: scale(1.3);
+
+  }
+}
+
+	4)Sélecteurs CSS "complexes" 
+	____________________________
+
+J'ai préferé d'utiliser plutot des divs avec differentes classes et pour cette raison il n'y a pas beacoup de selecteurs 'complexes'.
+
+
+***Selecteurs dans common_css_4.css***
+
+ .title > h1
+Tous les h1 qui se trouvent dans un élément de classe title.
+
+ nav>div
+Tous les divs qui se trouvent dans un élément nav.
+
+ ul>li:hover
+Tous les li qui sont survolées et se trouvent dans un élément ul.
+
+ nav > div:hover
+Tous les div survolées qui sont dans un élément nav.
+
+ nav > div:hover ul
+Tous les éléments ul qui sont contenues dans un élément div survolée et qui est lui-même dans un élément nav.
+
+ .block:nth-of-type(1) img.end
+Les images de classe end qui se trouvent dans le prémier élément de classe block. (C'est pour agrandir seulement les oiseaux du prémiér élément .block)
+
+***Selecteurs dans pages_css.css***
+
+ tbody tr:hover
+Les élémnets tr survolés qui sont dans un élément tbody.
+

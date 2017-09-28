@@ -1,0 +1,17 @@
+
+/* ----------BACKGROUND IMG CODE------------ */
+#intro {
+  background-image: url('../images/intro/world.png');
+}
+
+#page1 {
+  background-image: url('../images/intro/back-meteora.jpg');
+}
+
+#page2 {
+  background-image: url('../images/intro/map.jpg');
+}
+
+#page3 {
+  background-image: url('../images/intro/pretty.jpg');
+}

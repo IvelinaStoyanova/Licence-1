@@ -1,0 +1,112 @@
+/*-----------METEORA BACKGROUNDS-----------*/
+
+#meteora-intro {
+  background-image: url('../images/meteora/meteora3.jpg');
+}
+
+#meteora1 {
+  background-image: url('../images/meteora/meteora1.jpg');
+}
+
+#meteora2 {
+  background-image: url('../images/meteora/meteora4.jpg');
+}
+
+#meteora3 {
+  background-image: url('../images/meteora/meteora2.jpg');
+}
+
+/*-----------CINQUE TERRE BACKGROUNDS-----------*/
+
+#cinque-intro {
+  background-image: url('../images/cinque/cinque1.jpg');
+}
+
+#cinque1 {
+  background-image: url('../images/cinque/cinque2.jpg');
+}
+
+#cinque2 {
+  background-image: url('../images/cinque/cinque3.jpg');
+}
+
+#cinque3 {
+  background-image: url('../images/cinque/cinque4.jpg');
+}
+/*-----------LOFOTEN TERRE BACKGROUNDS-----------*/
+
+#lofoten-intro {
+  background-image: url('../images/lofoten/intro.jpg');
+}
+
+#lofoten1 {
+  background-image: url('../images/lofoten/lofoten2.jpg');
+}
+
+#lofoten2 {
+  background-image: url('../images/lofoten/lofoten3.jpg');
+}
+
+#lofoten3 {
+  background-image: url('../images/lofoten/lofoten4.jpg');
+}
+
+/*-----------TABLE CODE-----------*/
+table {
+  width: 45vmin;
+  text-align: center;
+}
+td {
+  border: 2px solid black;
+  border-style: groove;
+
+}
+
+thead > tr  {
+  height: 5em;;
+}
+
+td>img{
+  height: 40vmin;
+  border-radius: 3em;
+}
+
+tbody tr:hover {
+  transition: transform 1s;
+  transform: scale(1.15);
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+/* ----------DETAILS CLASS CODE------------ */
+
+
+span{
+  display: block;
+  font-size: 4vmin;
+  font-weight: bold;
+  margin: 0.5em 0px;
+
+  font-family: 'Lily Script One', cursive;
+}
+
+/* ----------PHONE VERSION CODE------------ */
+@media screen and (max-width:1050px) {
+  video{
+    width: 600px;
+  }
+}
+
+@media screen and (max-width:750px) {
+  video{
+    width: 400px;
+  }
+  td>img{
+    height: 25vmin;
+  }
+}
+
+@media screen and (max-width:500px) {
+  video{
+    width: 300px;
+  }
+}
