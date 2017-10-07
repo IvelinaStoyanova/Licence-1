@@ -1,0 +1,10 @@
+Tout a été fait.
+Le projet a été réalisé sur mozzila Firefox.
+
+Fonctionnalité optionnelle: permettre la modification de la quantité d'un article dans le panier.
+
+Je rajoute deux versions du script, un avec la fonctionnalité et un sans, parce que il y a des fois ou 
+la modification de la quantité d'un article dans le panier, n'est pas prise en compte normalement et cause des problemes
+dans le total. Je n'ai pas trouve la raison, je pense que c'est peut etre un probleme de l'evenement 'mouseover',
+parce que il y a des fois ou apres les memes instructions le probleme apparait, mais si on les repete
+il n'est pas present.
